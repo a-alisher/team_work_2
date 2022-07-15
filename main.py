@@ -1,16 +1,95 @@
-# This is a sample Python script.
+# Alisher Alimkanov
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+# Задание 1:
+# У вас есть идея создать Back-end для игры: "Угадай число."
+# Данный код генерирует рандомное число.
+###################
+# import random as rd
+# random_number = rd.randint(0,10)
+# print(random_number)
+###################
+# С помощью функции:
+#    my_number = int(input("Введите число: "))
+# спрашивайте число от пользователя.
+# Запустите бесконечный цикл!
+# И пытайтесь спрашивать у пользователя какое-то число каждый раз.
+# Если пользователь угадал число которое сгенерировал компьютер остановите цикл и скажите пользователю - "Вы угадали!"
+# Если пользователь не угадал вы снова спросите у него число.
+# Если пользователь 3 раза подряд не угадал число, вы останавливаете цикл и говорите: "Вы проиграли..."
+#######################################################################
+# import random as rd
+# random_number = rd.randint(0,10)
+# print(random_number)
+# trying = 0
+#
+# while True:
+#     try:
+#         my_number = int(input("Введите число: "))
+#         trying += 1
+#         if my_number == random_number:
+#             print('Вы угадали ')
+#             break
+#         elif trying == 3:
+#             print('Вы проиграли !')
+#             break
+#         elif my_number != random_number:
+#             print('Не угадали ')
+#             continue
+#     except ValueError:
+#         print('Value nafig!!!!!')
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+# Задание 2:
+        # Напишите программу, которая циклично запрашивает у пользователя номера символов по таблице Unicode и выводит соответствующие им символы.
+        # Завершает работу при вводе нуля.
+###################################################################
+# while True:
+#     try:
+#         A = int(input("Введите номер символа Юникод: "))
+#         if A > 0:
+#             print(chr(A))
+#             continue
+#         else: A == 0
+#         break
+#     except ValueError:
+#         print("VAlue Error!")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+
+# Задание 3:
+        # Напишите программу, которая измеряет длину введенной строки.
+        # Если строка длиннее десяти символов, то выносится предупреждение.
+        # Если короче, то к строке добавляется столько символов *, чтобы ее длина составляла десять символов, после чего новая строка должна выводиться на экран.
+###################################################################
+
+# s = input("введите строку: ")
+# if len(s) > 10:
+#     print(len(s), 'Строка не должна быть длиннее 10 сиимволов!')
+# else:
+#     for x in range(len(s), 10):
+#         s += "*"
+#     print(s)
+
+
+
+# Задание 4:
+        # Напишите программу, которая запрашивает у пользователя шесть вещественных чисел.
+        # На экран выводит минимальное и максимальное из них, округленные до двух знаков после запятой.
+        # Выполните задание без использования встроенных функций min() и max().
+####################################################################
+
+count = 0
+while True:
+    float_number = (float(input("Введите вещественное число ")))
+    count += 1
+    print(round(float_number, 2))
+    if count > 6:
+        print("Неверно!")
+        continue
+
+
+
+
