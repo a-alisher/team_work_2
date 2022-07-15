@@ -83,18 +83,22 @@
 
 list_1 = []
 count = 0
+
+
 while True:
     float_number = (float(input("Введите вещественное число ")))
     count += 1
     list_1.append(float_number)
-    sorted_list = sorted(list_1)
-    result_1 = sorted_list[1]
-    result_2 = sorted_list[-1]
-    print(round(result_1), 2)
-    if count > 6:
-        print("Неверно!")
-        continue
 
+    if count == 6:
+        sorted_list = sorted(list_1)
+        result_1 = sorted_list[0]
+        result_2 = sorted_list[-1]
+        print(round(result_1, 2))
+        print(round(result_2, 2))
+    elif count > 6:
+        print("Неверно!")
+        break
 
 
 #Ismail
